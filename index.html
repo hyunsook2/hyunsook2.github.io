@@ -6,11 +6,24 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="icon" href="https://github.com/hyunsook2.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+    crossorigin="anonymous"
+  />
 <body>
+    <div class="headtime alert alert-danger">저의 포트폴리오를
+    <span id="h" style="display: none"></span
+    ><span id="h-label" style="display: none">시간</span>
+    <span id="m" style="display: none"></span
+    ><span id="m-label" style="display: none">분</span> 
+    <span id="s">0</span>초나 봐주셔서 감사합니다.
+  </div>
 
 <!-- 프로필 부분 -->
 <div id="profile-section">
-    <div style="margin-left:auto; margin-right:auto; border: 1px solid #e0e0e0; border-radius: 8px; padding: 24px; width: 150px; text-align: center;">
+    <div class="profile">
         <img src="https://github.com/hyunsook2.png" alt="Profile picture" style="width: 100%; height: auto; border-radius: 50%; object-fit: cover; margin-bottom: 24px;">
         <h2 style="margin: 0 0 5px 0; font-size: 18px;">김현석</h2>
         <p style="margin: 0 0 5px 0; color: #777;">@hyunsook2</p>
@@ -18,40 +31,116 @@
         <hr style="border: 0; height: 1px; background-color: #e0e0e0; margin-bottom: 24px;">
         <div style="display: flex; justify-content: space-around;">
             <a href="https://github.com/hyunsook2"><i class="fab fa-github"></i></a>
-            <a href="https://www.instagram.com/hyunsook.2/"><i class="fab fa-instagram"></i></a>
-
+            <a href="https://www.instagram.com/hyunsook.2/"><i class="fab fa-instagram"></i></a>          
+            <a href="https://open.kakao.com/o/sVw4Uasf"><i class="fas fa-comment"></i></a>
         </div>
+       
     </div>
+    
 </div>
+<div class="line"></div>
+<div class="external">
+    <br>
+    <p style="font-family:Raleway; font-size:22px; text-align:center;">My Skill</p>
+    <div class="horizontal-scroll-wrapper">
 
+      <div class="img-wrapper slower">
+       <img src="image/css.png" />
+      </div>
+
+      <div class="img-wrapper faster">
+          <img src="image/html.png"/>
+      </div>
+
+      <div class="img-wrapper slower vertical">
+          <img src="image/vscide.png"/>
+      </div>
+
+      <div class="img-wrapper slower slower-down">
+          <img src="image/react.png"/>
+       </div>
+
+      <div class="img-wrapper">
+          <img src="image/jquery.png"/>
+      </div>
+
+      <div class="img-wrapper slower">
+          <img src="image/java.png"/>
+      </div>
+
+      <div class="img-wrapper faster1">
+          <img src="image/javascript.png"/>
+      </div>
+
+      <div class="img-wrapper slower slower2">
+          <img src="image/python.png"/>
+      </div>
+
+      <div class="img-wrapper">
+          <img src="image/eclipse.png"/>
+      </div>
+
+      <div class="img-wrapper slower">
+          <img src="image/oracle.png" />
+      </div>
+
+      <div class="img-wrapper faster1">
+          <img src="image/spring.png"/>
+      </div>
+
+      <div class="img-wrapper">
+          <img src="image/sourcetree.png"/>
+      </div>
+
+      <div class="img-wrapper slower slower-down">
+          <img src="image/github.png"/>
+      </div>
+
+      <div class="img-wrapper slower last">
+          <img src="image/mysql.png"/>
+      </div>
+
+      <div class="img-wrapper last">
+          <img src="image/postman.png"/>
+      </div>
+
+    </div>
+  </div>
 <div class="line"></div>
 
 <!-- Project 부분 -->
 <div id="project-section">
     <h1 class="title">Project</h1>
-
     <div id="app" class="container">
-        <card data-image="https://images.unsplash.com/photo-1479660656269-197ebb83b540?dpr=2&auto=compress,format&fit=crop&w=1199&h=798&q=80&cs=tinysrgb&crop=">
-            <h1 slot="header">Team Project Minty</h1>
+        <card data-image="image/MintyLogo.png">
+            <h1 slot="header">Minty</h1>
             <p slot="content">
-                <br>
-                중고거래 플랫폼 민티.
+                Team Project<br>
+                중고거래 플랫폼 민티
             </p>
         </card>
-        <card data-image="https://images.unsplash.com/photo-1479659929431-4342107adfc1?dpr=2&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=">
-            <h1 slot="header">Team Project ERP Groupware</h1>
-            <p slot="content">협업을 위해 필요한 다양한 비즈니스 기능을 하나의 플랫폼에서 지원하는 업무용 소프트웨어.</p>
+        <card data-image="image/RebootLogo.png">
+            <h1 slot="header">ERP Groupware</h1>
+            <p slot="content">
+                Team Project<br>
+                다양한 비즈니스 기능을 지원하는 업무용 소프트웨어.</p>
         </card>
-        <card data-image="https://images.unsplash.com/photo-1479621051492-5a6f9bd9e51a?dpr=2&auto=compress,format&fit=crop&w=1199&h=811&q=80&cs=tinysrgb&crop=">
-            <h1 slot="header">Shop</h1>
-            <p slot="content">자바 스레드를 이용한 경마게임
-                <br>                                            <br>
+        <card data-image="image/horse.jpg">
+            <h1 slot="header">JavaGame</h1>
+            <p slot="content">
+                Personal Project<br>
+                자바 스레드를 이용한 경마게임
             </p>
         </card>
     </div>
 </div>
+<div>
+    
+</div>
+
 
 <script src="https://unpkg.com/vue@2.6.14/dist/vue.js"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="js/index.js"></script>
 
 </body>

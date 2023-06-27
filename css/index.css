@@ -1,18 +1,193 @@
+@-webkit-keyframes NO {
+  from,
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+@keyframes NO {
+  from,
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+@-webkit-keyframes arrive {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes arrive {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 100% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 100% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
 body {
   margin: 40px 0;
   font-family: "Raleway";
-  font-size: 14px;
-  font-weight: 500;
   background-color: #fce9f1;
   -webkit-font-smoothing: antialiased;
+  background-size: 200% 100% !important;
+  -webkit-animation: move 3s ease infinite;
+  animation: move 3s ease infinite;
+  transform: translate3d(10, 20, 20);
+  background: linear-gradient(45deg, #f1f4f4 10%, #e7f0f777 90%);
 }
-
+.headtime {
+  z-index: 50;
+  position: fixed !important;
+  width: 100%;
+  background: rgba(58, 224, 100, 0.544);
+  text-align: center;
+}
+.profile {
+  text-align: center;
+  opacity: 0;
+  transform: translate3d(0, 500px, 0);
+  -webkit-animation: arrive 500ms ease-in-out 0.7s forwards;
+  animation: arrive 500ms ease-in-out 0.7s forwards;
+  margin-top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 24px;
+  width: 12vw;
+  text-align: center;
+}
 .title {
   font-family: "Raleway";
   font-size: 24px;
   font-weight: 700;
   color: #5d4037;
   text-align: center;
+}
+
+#profile-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-container {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 32px;
+  width: 300px;
+  text-align: center;
+}
+
+.profile-picture {
+  width: 60%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 24px;
+}
+
+.profile-name {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+}
+
+.profile-username {
+  margin: 0 0 15px 0;
+  color: #777;
+}
+
+.profile-role {
+  margin: 0 0 24px 0;
+  color: #696969;
+  font-size: 14px;
+}
+
+.profile-separator {
+  border: 0;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin-bottom: 24px;
+}
+
+.profile-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.link-icon img {
+  width: 24px;
+  height: 24px;
 }
 
 #project-section .title {
@@ -73,6 +248,7 @@ body {
 #project-section .card {
   position: relative;
   flex: 0 0 240px;
+  bottom: 0;
   width: 240px;
   height: 320px;
   background-color: #333;
@@ -88,8 +264,8 @@ body {
   position: absolute;
   top: -20px;
   left: -20px;
-  width: 100%;
-  height: 100%;
+  width: 120%;
+  height: 120%;
   padding: 20px;
   background-repeat: no-repeat;
   background-position: center;
@@ -156,7 +332,113 @@ body {
 .line {
   flex-basis: 100%;
   border-bottom: 1px solid black;
+  margin-top: 50px;
   margin-bottom: 30px;
   margin-left: 5%;
   margin-right: 5%;
+}
+
+::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+}
+
+::-webkit-scrollbar-button {
+  width: 1px;
+  height: 1px;
+}
+.external {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.horizontal-scroll-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vh;
+  transform: rotate(-90deg) translate3d(0, -100vh, 0);
+  transform-origin: right top;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0;
+  height: 100vw;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  padding-bottom: 10rem;
+}
+
+.img-wrapper {
+  transform: rotate(90deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
+  transform-origin: 50% 50%;
+  transform: rotate(90deg) translateZ(0.1px) scale(0.9) translateX(0px)
+    translateY(-3vh);
+  transition: 1s;
+}
+
+.img-wrapper:hover {
+  min-height: 65vh;
+}
+
+.slower {
+  transform: rotate(90deg) translateZ(-0.2px) scale(1.1) translateX(0%)
+    translateY(-10vh);
+}
+.slower1 {
+  transform: rotate(90deg) translateZ(-0.25px) scale(1.05) translateX(0%)
+    translateY(8vh);
+}
+.slower2 {
+  transform: rotate(90deg) translateZ(-0.3px) scale(1.3) translateX(0%)
+    translateY(2vh);
+}
+.slower-down {
+  transform: rotate(90deg) translateZ(-0.2px) scale(1.1) translateX(0%)
+    translateY(16vh);
+}
+.faster {
+  transform: rotate(90deg) translateZ(0.15px) scale(0.8) translateX(0%)
+    translateY(14vh);
+}
+.faster1 {
+  transform: rotate(90deg) translateZ(0.05px) scale(0.8) translateX(0%)
+    translateY(10vh);
+}
+.fastest {
+  transform: rotate(90deg) translateZ(0.22px) scale(0.7) translateX(-10vh)
+    translateY(-15vh);
+}
+.vertical {
+  transform: rotate(90deg) translateZ(-0.15px) scale(1.15) translateX(0%)
+    translateY(0%);
+}
+.last {
+  transform: rotate(90deg) translateZ(-0.2px) scale(1.1) translateX(25vh)
+    translateY(-8vh);
+}
+.scroll-info,
+header {
+  position: absolute;
+  left: 1rem;
+}
+
+header {
+  bottom: 1rem;
+}
+.scroll-info {
+  top: 1rem;
+}
+
+img {
+  max-width: 25vw;
+  max-height: 25vh;
+  transition: 0.5s;
+  vertical-align: top;
+}
+a:hover img {
+  filter: none;
 }
