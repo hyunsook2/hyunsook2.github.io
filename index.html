@@ -1,101 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>bi portfolio</title>
+    <title>hyunsook2</title>
     <link rel="stylesheet" href="css/index.css">
-    <link rel="icon" href="image/logo/liyo2.png" type="image/png">
+    <link rel="icon" href="https://github.com/hyunsook2.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
 <body>
-
-<!-- Header -->
+    <!-- Header -->
 <div class="header">
     <nav class="navbar container navbar-dark" style="background:white;">
         <a class="navbar-brand" href="/">
             <img src="image/logo/liyo.png" alt="로고 이미지" width="110px"/>
         </a>
+            <div class="headtime alert alert-danger">저의 포트폴리오를
+                <span id="h" style="display: none"></span>
+                <span id="h-label" style="display: none">시간</span>
+                <span id="m" style="display: none"></span>
+                <span id="m-label" style="display: none">분</span> 
+                <span id="s">0</span>초나 봐주셔서 감사합니다.
+            </div>
         <div class="navbar-nav gap-2">
-            <a class="nav-link menu-a" href="/">Project</a>
-            <a class="nav-link menu-a" href="/">방명록</a>
+            <a class="nav-link menu-a project-button" >프로젝트</a>
+            <a class="nav-link menu-a skill-button" >보유기술</a>
         </div>
     </nav>
 </div>
 
+    
 
-    <!-- 프로필 부분 -->
-    <div id="profile-section">
-        <div class="profile-container">
-            <img src="https://github.com/bi-sz.png" alt="Profile picture" class="profile-picture">
-            <h2 class="profile-name">권 비</h2>
-            <p class="profile-username">@liyo</p>
-            <p class="profile-role">Full-Stack Developer</p>
-            <hr class="profile-separator">
-            <div class="profile-links">
-                <a href="https://github.com/bi-sz" class="link-icon"><img src="image/icon/github.png" alt="Velog"></i></a>
-                <a href="https://velog.io/@bi-sz" class="link-icon"><img src="image/icon/velog.png" alt="Velog"></a>
-                <a href="https://li-yo.tistory.com" class="link-icon"><img src="image/icon/tistory.png" alt="Tistory"></a>
-                <a href="https://www.instagram.com/kwonbi_" class="link-icon"><img src="image/icon/insta.png" alt="Insta"></a>
-                <a href="https://open.kakao.com/o/sGFzzbsf" class="link-icon"><img src="image/icon/email.png" alt="Email"></a>
-                <a href="https://open.kakao.com/o/sGFzzbsf" class="link-icon"><img src="image/icon/kakao.png" alt="Kakao"></a>
-            </div>
+<!-- 프로필 부분 -->
+<div id="profile-section">
+    <div class="profile">
+        <img src="https://github.com/hyunsook2.png" alt="Profile picture" style="width: 100%; height: auto; border-radius: 50%; object-fit: cover; margin-bottom: 24px;">
+        <h2 style="margin: 0 0 5px 0; font-size: 18px;">김현석</h2>
+        <p style="margin: 0 0 5px 0; color: #777;">@hyunsook2</p>
+        <p style="margin: 0 0 24px 0; color: #777; font-size: 14px;">Full-Stack Developer</p>
+        <hr style="border: 0; height: 1px; background-color: #e0e0e0; margin-bottom: 24px;">
+        <div style="display: flex; justify-content: space-around;">
+            <a href="https://github.com/hyunsook2"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/hyunsook.2/"><i class="fab fa-instagram"></i></a>          
+            <a href="https://open.kakao.com/o/sVw4Uasf"><i class="fas fa-comment"></i></a>
         </div>
+       
     </div>
+    
+</div>
+<div class="line"></div>
+<div class="external">
+    <br>
+    <p style="font-family:Raleway; font-size:22px; text-align:center;">My Skill</p>
+    <div class="horizontal-scroll-wrapper">
 
-    <div class="line"></div>
+      <div class="img-wrapper slower">
+       <img src="image/css.png" />
+      </div>
 
-    <!-- Project 부분 -->
-    <div id="project-section">
-        <h1 class="title">Project</h1>
+      <div class="img-wrapper faster">
+          <img src="image/html.png"/>
+      </div>
 
-        <div id="app" class="container">
-            <card data-image="https://images.unsplash.com/photo-1479660656269-197ebb83b540?dpr=2&auto=compress,format&fit=crop&w=1199&h=798&q=80&cs=tinysrgb&crop=">
-                <h1 slot="header">Minty</h1>
-                <p slot="content">
-                    <br>
-                    중고거래 플랫폼 민티.
-                </p>
-            </card>
-            <card data-image="https://images.unsplash.com/photo-1479659929431-4342107adfc1?dpr=2&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=">
-                <h1 slot="header">ERP Groupware</h1>
-                <p slot="content">협업을 위해 필요한 다양한 비즈니스 기능을 하나의 플랫폼에서 지원하는 업무용 소프트웨어.</p>
-            </card>
-            <card data-image="https://images.unsplash.com/photo-1479621051492-5a6f9bd9e51a?dpr=2&auto=compress,format&fit=crop&w=1199&h=811&q=80&cs=tinysrgb&crop=">
-                <h1 slot="header">Shop</h1>
-                <p slot="content">쇼핑몰 프로그램.
-                    <br>                                            <br>
-                </p>
-            </card>
-            <card data-image="https://images.unsplash.com/photo-1479644025832-60dabb8be2a1?dpr=2&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=">
-                <h1 slot="header">Console Shop</h1>
-                <p slot="content">
-                    <br>
-                    콘솔 쇼핑몰 프로그램.
-                    <br>                                                <br>
-                </p>
-            </card>
-        </div>
+      <div class="img-wrapper faster1">
+        <img src="image/javascript.png"/>
+      </div>
+
+      <div class="img-wrapper slower vertical">
+          <img src="image/vscide.png"/>
+      </div>
+
+      <div class="img-wrapper slower slower-down">
+          <img src="image/react.png"/>
+       </div>
+
+      <div class="img-wrapper">
+          <img src="image/jquery.png"/>
+      </div>
+
+      <div class="img-wrapper slower">
+          <img src="image/java.png"/>
+      </div>
+
+      <div class="img-wrapper slower slower2">
+          <img src="image/python.png"/>
+      </div>
+
+      <div class="img-wrapper">
+          <img src="image/eclipse.png"/>
+      </div>
+
+      <div class="img-wrapper slower slower-down">
+        <img src="image/typescript.png"/>
+     </div>
+
+      <div class="img-wrapper slower">
+          <img src="image/oracle.png" />
+      </div>
+
+      <div class="img-wrapper faster1">
+          <img src="image/spring.png"/>
+      </div>
+
+      <div class="img-wrapper">
+          <img src="image/sourcetree.png"/>
+      </div>
+
+      <div class="img-wrapper slower slower-down">
+          <img src="image/github.png"/>
+      </div>
+
+      <div class="img-wrapper slower last">
+          <img src="image/mysql.png"/>
+      </div>
+
+      <div class="img-wrapper last">
+          <img src="image/postman.png"/>
+      </div>
+
     </div>
+  </div>
+<div class="line"></div>
 
-    <script src="https://unpkg.com/vue@2.6.14/dist/vue.js"></script>
-    <script src="js/index.js"></script>
+<!-- Project 부분 -->
+<div id="project-section">
+    <h1 class="title">Project</h1>
+    <div id="app" class="container">
+        <card data-image="image/MintyLogo.png">
+            <h1 slot="header">Minty</h1>
+            <p slot="content">
+                Team Project<br>
+                중고거래 플랫폼 민티
+            </p>
+        </card>
+        <card data-image="image/RebootLogo.png">
+            <h1 slot="header">ERP Groupware</h1>
+            <p slot="content">
+                Team Project<br>
+                다양한 비즈니스 기능을 지원하는 업무용 소프트웨어.</p>
+        </card>
+        <card data-image="image/horse.jpg">
+            <h1 slot="header">JavaGame</h1>
+            <p slot="content">
+                Personal Project<br>
+                자바 스레드를 이용한 경마게임
+            </p>
+        </card>
+    </div>
+</div>
+<div>
+    
+</div>
 
+
+<script src="https://unpkg.com/vue@2.6.14/dist/vue.js"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="js/index.js"></script>
 <div class="footer">
     <div class="footer-content">
         <div class="footer-top">
-            <p>liyo</p>
-            <p>문의 kwonbe99@gmail.com</p>
+            <p>ddu-ddu-★</p>
+            <p>sispa0366@gmail.com</p>
         </div>
         <div class="footer-links">
-            <a style="cursor:pointer;" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=kwonber99@gmail.com" target="_blank">
-                <img class="footer-icon" src="image/icon/email.png" alt="email"/>
+            <a style="cursor:pointer;" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=sispa0366@gmail.com" target="_blank">
+                <img class="footer-icon" src="image/email.png" alt="email"/>
             </a>
-            <a style="cursor:pointer;" href="https://open.kakao.com/o/sGFzzbsf">
-                <img class="footer-icon" src="image/icon/kakao.png" alt="Kakao"/>
+            <a style="cursor:pointer;" href="https://open.kakao.com/o/sVw4Uasf">
+                <img class="footer-icon" src="image/kakao.png" alt="Kakao"/>
             </a>
         </div>
         <div class="footer-bottom">
-            <p>© 2023 bi-sz. liyo.</p>
+            <p>© 2023 hyunsook2 ddu ddu</p>
         </div>
     </div>
 </div>
