@@ -78,36 +78,36 @@ const app = new Vue({
   el: "#app",
 });
 
-var seconds = 0;
+// var seconds = 0;
 
-function t() {
-  var hours = Math.floor(seconds / 3600);
-  var minutes = Math.floor((seconds % 3600) / 60);
-  var remainingSeconds = seconds % 60;
+// function t() {
+//   var hours = Math.floor(seconds / 3600);
+//   var minutes = Math.floor((seconds % 3600) / 60);
+//   var remainingSeconds = seconds % 60;
 
-  if (hours > 0) {
-    $("#h").text(hours).show();
-    $("#h-label").show();
-  } else {
-    $("#h").hide();
-    $("#h-label").hide();
-  }
+//   if (hours > 0) {
+//     $("#h").text(hours).show();
+//     $("#h-label").show();
+//   } else {
+//     $("#h").hide();
+//     $("#h-label").hide();
+//   }
 
-  if (minutes > 0) {
-    $("#m").text(minutes).show();
-    $("#m-label").show();
-  } else {
-    $("#m").hide();
-    $("#m-label").hide();
-  }
+//   if (minutes > 0) {
+//     $("#m").text(minutes).show();
+//     $("#m-label").show();
+//   } else {
+//     $("#m").hide();
+//     $("#m-label").hide();
+//   }
 
-  $("#s").text(remainingSeconds);
+//   $("#s").text(remainingSeconds);
 
-  seconds++;
+//   seconds++;
 
-  $(".alert").show();
+//   $(".alert").show();
 
-  setTimeout(t, 1000);
-}
+//   setTimeout(t, 1000);
+// }
 
-t();
+// t();
