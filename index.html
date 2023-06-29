@@ -1,105 +1,130 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>hyunsook2</title>
-    
+    <title>hyunsook2 portfolio</title>
     <link rel="stylesheet" href="css/index.css">
-    <link rel="icon" href="https://github.com/hyunsook2.png" type="image/png">
-
+    <link rel="icon" href="image/logo/liyo2.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <script src="js/layout.js"></script>
+</head>
 <body>
-    <!-- Header -->
-<!-- <div class="header">
-    <nav class="navbar container navbar-dark" style="background:white;">
-        <a class="navbar-brand" href="/">
-            <img src="https://github.com/hyunsook2.png" alt="로고 이미지" width="60px"/>
-        </a>
-            <div class="headtime alert alert-danger">저의 포트폴리오를
-                <span id="h" style="display: none"></span>
-                <span id="h-label" style="display: none">시간</span>
-                <span id="m" style="display: none"></span>
-                <span id="m-label" style="display: none">분</span> 
-                <span id="s">0</span>초나 봐주셔서 감사합니다.
+    <div id="header">
+    </div>
+    <!-- 프로필 부분 -->
+    <div id="profile-section">
+        <div class="profile-container">
+            <img src="https://github.com/hyunsook2.png" alt="Profile picture" class="profile-picture">
+            <h2 class="profile-name">김현석</h2>
+            <p class="profile-username">@hyunsook2</p>
+            <p class="profile-role">Full-Stack Developer</p>
+            <p class="profile-role">수정중입니다.</p>
+            <hr class="profile-separator">
+            <div class="profile-links">
+                <a href="https://github.com/hyunsook2" class="link-icon"><img src="image/icon/github.png" alt="Velog"></i></a>
+                <a href="https://www.instagram.com/hyunsook.2/" class="link-icon"><img src="image/icon/insta.png" alt="Insta"></a>
+                <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=sispa0366@gmail.com" class="link-icon" class="link-icon"><img src="image/icon/email.png" alt="Email"></a>
+                <a href="https://open.kakao.com/o/sg49Axsf" class="link-icon"><img src="image/icon/kakao.png" alt="Kakao"></a>
             </div>
-        <div class="navbar-nav gap-2">
-            <a class="nav-link menu-a project-button" >프로젝트</a>
-        </div>
-    </nav>
-</div> -->
-
-    
-
-<!-- 프로필 부분 -->
-<div id="profile-section">
-    <div class="profile">
-        <img src="https://github.com/hyunsook2.png" alt="Profile picture" style="width: 100%; height: auto; border-radius: 50%; object-fit: cover; margin-bottom: 24px;">
-        <h2 style="margin: 0 0 5px 0; font-size: 18px;">김현석</h2>
-        <p style="margin: 0 0 5px 0; color: #777;">@hyunsook2</p>
-        <p style="margin: 0 0 24px 0; color: #777; font-size: 14px;">Full-Stack Developer</p>
-        <hr style="border: 0; height: 1px; background-color: #e0e0e0; margin-bottom: 24px;">
-        <div style="display: flex; justify-content: space-around;">
-            <a href="https://github.com/hyunsook2"><i class="fab fa-github"></i></a>
-            <a href="https://www.instagram.com/hyunsook.2/"><i class="fab fa-instagram"></i></a>          
-            <a href="https://open.kakao.com/o/sVw4Uasf"><i class="fas fa-comment"></i></a>
         </div>
     </div>
-    
-</div>
 
-<div class="line"></div>
+    <div class="line"></div>
 
-<!-- Project 부분 -->
-<div id="project-section">
-    <h1 class="title">Project</h1>
-    <div id="app" class="container">
-        <card data-image="image/MintyLogo.png">
-            <h1 slot="header">Minty</h1>
-            <p slot="content">
-                Team Project<br>
-                중고거래 플랫폼 민티
-            </p>
-        </card>
-        <card data-image="image/RebootLogo.png">
-            <h1 slot="header">ERP Groupware</h1>
-            <p slot="content">
-                Team Project<br>
-                다양한 비즈니스 기능을 지원하는 업무용 소프트웨어.</p>
-        </card>
-        <card data-image="image/horse.jpg">
-            <h1 slot="header">JavaGame</h1>
-            <p slot="content">
-                Personal Project<br>
-                자바 스레드를 이용한 경마게임
-            </p>
-        </card>
+    <!-- skils 부분 -->
+    <div id = "skills-section">
+        <h1 class="title">Skills</h1>
+            <article class="Skills_Skills__NOlZH" id="skills">
+            <div class="Skills_content__g0p1s">
+                <div class="Skills_tech-stacks-container__wPIVK">
+                    <div class="Skills_tech-stacks__f20f8">
+                        <div class="Skills_title__TH2ju">Frontend</div>
+                        <img class="Skills_img__f94MA" src="image/skils/Front-end/html.png" alt="">
+                        <img class="Skills_img__f94MA" src="image/skils/Front-end/css.png" alt="">
+                        <img class="Skills_img__f94MA" src="image/skils/Front-end/javascript.png" alt="">
+                        <img class="Skills_img__f94MA" src="image/skils/Front-end/react.png" alt="">
+                        <img class="Skills_img__f94MA" src="image/skils/Front-end/jquery.png" alt="">
+                        <img class="Skills_img__f94MA" src="image/skils/Front-end/typescript.png" alt="">
+                    </div>
+                    <div class="Skills_tech-stacks__f20f8">
+                        <div class="Skills_title__TH2ju">Backend</div>
+                        <img class="Skills_img__f94MA" src="image/skils/Back-end/java.png" alt="">
+                        <img class="Skills_img__f94MA" src="image/skils/Back-end/python.png" alt="">
+                        <img class="Skills_img__f94MA" src="image/skils/Back-end/nodejs.png" alt="">
+                    </div>
+                    <div class="Skills_tech-stacks__f20f8">
+                        <div class="Skills_title__TH2ju">Development Tool</div>
+                        <img class="Skills_img__f94MA" src="image/skils/DevelopmentTools/intelliJ.png" alt="">
+                        <img class="Skills_img__f94MA" src="image/skils/DevelopmentTools/vscode.png" alt="">
+                        <img class="Skills_img__f94MA" src="image/skils/DevelopmentTools/VisualStudio.png" alt="">
+                        <img class="Skills_img__f94MA" src="image/skils/DevelopmentTools/eclipse.png" alt="">
+                        <img class="Skills_img__f94MA" src="image/skils/DevelopmentTools/anaconda.png" alt="">
+                        <img class="Skills_img__f94MA" src="image/skils/DevelopmentTools/dbeaver.png" alt="">
+                    </div>
+                    <div class="Skills_tech-stacks__f20f8">
+                        <div class="Skills_title__TH2ju">Framework</div>
+                        <img class="Skills_img__f94MA" src="image/skils/Framework/spring.png" alt="">
+                        <img class="Skills_img__f94MA" src="image/skils/Framework/SpringBoot.png" alt="">
+                            <img class="Skills_img__f94MA" src="image/skils/Framework/flask.png" alt="">
+                        <img class="Skills_img__f94MA" src="image/skils/Framework/bootstrap.png" alt="">
+                    </div>
+                    <div class="Skills_tech-stacks__f20f8">
+                        <div class="Skills_title__TH2ju">WEB/WAS</div>
+                        <img class="Skills_img__f94MA" src="image/skils/WEB-WAS/tomcat.png" alt="">
+                    </div>
+                    <div class="Skills_tech-stacks__f20f8">
+                        <div class="Skills_title__TH2ju">DataBase</div>
+                        <img class="Skills_img__f94MA" src="image/skils/DataBase/mysql.png" alt="">
+                        <img class="Skills_img__f94MA" src="image/skils/DataBase/oracle.png" alt="">
+                    </div>
+                    <div class="Skills_tech-stacks__f20f8">
+                        <div class="Skills_title__TH2ju">Version Control</div>
+                        <img class="Skills_img__f94MA" src="image/skils/Version-Control/github.png" alt="">
+                        <img class="Skills_img__f94MA" src="image/skils/Version-Control/git.png" alt="">
+                        <img class="Skills_img__f94MA" src="image/skils/Version-Control/sourcetree.png" alt="">
+                    </div>
+                        <div class="Skills_tech-stacks__f20f8">
+                        <div class="Skills_title__TH2ju">Communication</div>
+                        <img class="Skills_img__f94MA" src="image/skils/coummunication/Figma.png" alt="">
+                        <img class="Skills_img__f94MA" src="image/skils/coummunication/StarUML.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </article>
     </div>
-</div>
-<div>
-    
-</div>
 
+    <div class="line"></div>
 
-<script src="https://unpkg.com/vue@2.6.14/dist/vue.js"></script>
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script src="js/index.js"></script>
-<div class="footer">
-    <div class="footer-content">
-        <div class="footer-top">
-            <p>ddu-ddu-★</p>
-            <p>sispa0366@gmail.com</p>
-        </div>
-        <div class="footer-links">
-            <a style="cursor:pointer;" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=sispa0366@gmail.com" target="_blank">
-                <img class="footer-icon" src="image/email.png" alt="email"/>
-            </a>
-            <a style="cursor:pointer;" href="https://open.kakao.com/o/sVw4Uasf">
-                <img class="footer-icon" src="image/kakao.png" alt="Kakao"/>
-            </a>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2023 hyunsook2 ddu ddu</p>
+    <!-- Project 부분 -->
+    <div id="project-section">
+        <h1 class="title">Project</h1>
+
+        <div id="app" class="container">
+            <card data-image="image/project/Minty/MintyLogo.png">
+                <h1 slot="header">Minty</h1>
+                <p slot="content">
+                    <br>
+                    중고거래 플랫폼 민티.
+                </p>
+            </card>
+            <card data-image="image/project/ERPGroupware/RebootLogo.png">
+                <h1 slot="header">ERP Groupware</h1>
+                <p slot="content">협업을 위해 필요한 다양한 비즈니스 기능을 하나의 플랫폼에서 지원하는 업무용 소프트웨어.</p>
+            </card>
+            <card data-image="image/project/JavaGame/horse.jpg">
+                <h1 slot="header">Java Game</h1>
+                <p slot="content">자바를 이용한 간단한 경마게임
+                    <br>                                            <br>
+                </p>
+            </card>
         </div>
     </div>
-</div>
+
+    <script src="https://unpkg.com/vue@2.6.14/dist/vue.js"></script>
+    <script src="js/index.js"></script>
+
+    <div id="footer"></div>
 </body>
 </html>

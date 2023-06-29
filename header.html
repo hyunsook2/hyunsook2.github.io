@@ -1,0 +1,36 @@
+<!-- Header -->
+<div class="header">
+  <nav class="navbar container navbar-dark" style="background: white">
+    <a class="navbar-brand" href="index.html">
+      <img
+        src="image/logo/liyo.png"
+        alt="로고 이미지"
+        width="110px"
+        id="logo"
+      />
+    </a>
+    <div class="navbar-nav gap-2">
+      <a class="nav-link menu-a" id="projectLink">Project</a>
+      <a class="nav-link menu-a" id="skillsLink">Skills</a>
+      <a class="nav-link menu-a" href="roulette.html">점메추</a>
+    </div>
+  </nav>
+</div>
+
+<script>
+  var logo = document.getElementById("logo");
+  var skillsLink = document.getElementById("skillsLink");
+  var projectLink = document.getElementById("projectLink");
+
+  logo.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  skillsLink.addEventListener("click", function () {
+    window.scrollTo({ top: 551, behavior: "smooth" });
+  });
+
+  projectLink.addEventListener("click", function () {
+    window.scrollTo({ top: 1163, behavior: "smooth" });
+  });
+</script>
