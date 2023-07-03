@@ -19,20 +19,12 @@
             text: "구내식당",
           },
           {
-            color: "#1d61ac",
-            text: "마라탕",
-          },
-          {
-            color: "#169ed8",
-            text: "얌샘김밥",
-          },
-          {
             color: "#209b6c",
             text: "돈까스",
           },
           {
             color: "#60b236",
-            text: "비빔밥",
+            text: "굶기",
           },
           {
             color: "#efe61f",
@@ -58,10 +50,7 @@
             color: "#be107f",
             text: "편의점",
           },
-          {
-            color: "#881f7e",
-            text: "우육탕면",
-          },
+         
         ];
 
         var $wrap = $(this);
