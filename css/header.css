@@ -16,7 +16,7 @@
     z-index: 1;
     position: fixed;
     top: 0;
-    font-family: 'Dovemayo_gothic', sans-serif;
+    font-family: 'ImcreSoojin', sans-serif;
   }
   
   .navbar {
@@ -46,6 +46,7 @@
     font-family: 'ImcreSoojin', sans-serif;
     font-size: 22px;
     transition: color 0.3s;
+    font-weight:bolder;
   }
   
   .nav-link:hover {
