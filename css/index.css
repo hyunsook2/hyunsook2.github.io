@@ -1,5 +1,12 @@
+@font-face {
+    font-family: 'ImcreSoojin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-font-family: "Raleway";
+font-family: "ImcreSoojin";
 font-size: 14px;
 font-weight: 500;
 background-color: #FCE9F1;
