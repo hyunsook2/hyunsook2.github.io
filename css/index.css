@@ -4,20 +4,38 @@
     font-weight: normal;
     font-style: normal;
 }
+.profile-container {
+	background: linear-gradient(-45deg, #e543123f, #e73c7e3b, #23a5d55f, #23d5ab5e);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+	
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
 body {
 font-family: "ImcreSoojin";
 font-size: 14px;
 font-weight: 500;
-background-color: #FCE9F1;
 -webkit-font-smoothing: antialiased;
 margin: 0;
   padding-top: 0;
   padding-bottom: 0;
+  
 }
 
 .title {
-font-family: "Raleway";
+font-family: "ImcreSoojin";
 font-size: 24px;
 font-weight: 700;
 color: #5D4037;
@@ -188,7 +206,7 @@ left: 0;
 z-index: 0;
 width: 100%;
 height: 100%;
-background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.6) 100%);
+/* background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.6) 100%); */
 background-blend-mode: overlay;
 opacity: 0;
 transform: translateY(100%);
@@ -212,11 +230,12 @@ margin-right: 5%;
 
 .line {
 flex-basis: 100%;
-border-bottom: 1px solid black;
+border-bottom: 1px solid rgba(95, 80, 80, 0.555);
 margin-top: 50px;
 margin-bottom: 30px;
 margin-left: 5%;
 margin-right: 5%;
+
 }
 
 /* Skills Section */
