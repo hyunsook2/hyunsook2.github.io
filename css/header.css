@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'ImcreSoojin';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+  html {
+    scroll-behavior: smooth; /* 스크롤 애니메이션 활성화 */
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    padding: 15px 30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    font-family: 'ImcreSoojin', sans-serif;
+  }
+
+  .header2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    padding: 15px 30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    font-family: 'ImcreSoojin', sans-serif;
+  }
+
+  .header3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    padding: 15px 30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    font-family: 'ImcreSoojin', sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    width: calc(100% - 60px);
+    padding: 0 100px;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    flex-grow: 1;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: black;
+    font-family: 'ImcreSoojin', sans-serif;
+    font-size: 22px;
+    transition: color 0.3s;
+  }
+  
+  .nav-link:hover {
+    color: gray;
+  }
+  

@@ -1,0 +1,295 @@
+@font-face {
+  font-family: 'ImcreSoojin';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.profile-container {
+background: linear-gradient(-45deg, #e543123f, #e73c7e3b, #23a5d55f, #23d5ab5e);
+background-size: 400% 400%;
+animation: gradient 5s ease infinite;
+
+}
+
+@keyframes gradient {
+0% {
+  background-position: 0% 50%;
+}
+50% {
+  background-position: 100% 50%;
+}
+100% {
+  background-position: 0% 50%;
+}
+}
+
+body {
+font-family: "ImcreSoojin";
+font-size: 14px;
+font-weight: 500;
+-webkit-font-smoothing: antialiased;
+margin: 0;
+padding-top: 0;
+padding-bottom: 0;
+background-color: #e4eef15f;
+}
+
+.visitor-counter img {
+  position: absolute;
+  right: 5%;
+  top: 12%;  
+  width: 150px;  
+  height: auto; 
+}
+
+.title {
+font-family: "Raleway";
+font-size: 24px;
+font-weight: 700;
+color: #5D4037;
+text-align: center;
+}
+
+
+#profile-section {
+margin-top: 10vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.profile-container {
+border: 1px solid #e0e0e0;
+border-radius: 8px;
+padding: 32px;
+width: 300px;
+text-align: center;
+background-color: rgba(255, 255, 255, 0.4);
+}
+
+.profile-picture {
+width: 60%;
+height: auto;
+border-radius: 50%;
+object-fit: cover;
+margin-bottom: 24px;
+}
+
+.profile-name {
+margin: 0 0 5px 0;
+font-size: 18px;
+}
+
+.profile-username {
+margin: 0 0 15px 0;
+color: #777;
+}
+
+.profile-role {
+margin: 0 0 24px 0;
+color: #696969;
+font-size: 14px;
+}
+
+.profile-separator {
+border: 0;
+height: 1px;
+background-color: black;
+margin-bottom: 24px;
+}
+
+.profile-links {
+display: flex;
+justify-content: space-around;
+}
+
+.link-icon img {
+width: 24px;
+height: 24px;
+}
+
+#project-section .title {
+font-family: "Raleway";
+font-size: 24px;
+font-weight: 700;
+color: #5D4037;
+text-align: center;
+}
+
+#project-section .container {
+padding: 40px 80px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+#project-section .card-wrap {
+margin: 10px;
+transform: perspective(800px);
+transform-style: preserve-3d;
+cursor: pointer;
+}
+
+#project-section .card-wrap:hover .card-info {
+transform: translateY(0);
+}
+
+#project-section .card-wrap:hover .card-info p {
+opacity: 1;
+}
+
+#project-section .card-wrap:hover .card-info,
+#project-section .card-wrap:hover .card-info p {
+transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+#project-section .card-wrap:hover .card-info:after {
+transition: 5s cubic-bezier(0.23, 1, 0.32, 1);
+opacity: 1;
+transform: translateY(0);
+}
+
+#project-section .card-wrap:hover .card-bg {
+transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1), opacity 5s cubic-bezier(0.23, 1, 0.32, 1);
+opacity: 0.8;
+}
+
+#project-section .card-wrap:hover .card {
+transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1);
+box-shadow: rgba(255, 255, 255, 0.2) 0 0 40px 5px, rgba(255, 255, 255, 1) 0 0 0 1px, rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset white 0 0 0 6px;
+}
+
+#project-section .card {
+position: relative;
+flex: 0 0 240px;
+width: 240px;
+height: 320px;
+background-color: #333;
+overflow: hidden;
+border-radius: 10px;
+box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
+transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+#project-section .card-bg {
+opacity: 0.5;
+position: absolute;
+top: -20px;
+left: -20px;
+width: 100%;
+height: 100%;
+padding: 20px;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95), opacity 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+pointer-events: none;
+}
+
+#project-section .card-info {
+padding: 20px;
+position: absolute;
+bottom: 0;
+color: #fff;
+transform: translateY(40%);
+transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+#project-section .card-info p {
+opacity: 0;
+text-shadow: rgba(0, 0, 0, 1) 0 2px 3px;
+transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+#project-section .card-info * {
+position: relative;
+z-index: 1;
+}
+
+#project-section .card-info:after {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+z-index: 0;
+width: 100%;
+height: 100%;
+
+background-blend-mode: overlay;
+opacity: 0;
+transform: translateY(100%);
+transition: 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+#project-section .card-info h1 {
+font-family: "Playfair Display";
+font-size: 36px;
+font-weight: 700;
+text-shadow: rgba(0, 0, 0, 0.5) 0 10px 10px;
+}
+
+#project-section .line {
+flex-basis: 100%;
+border-bottom: 1px solid black;
+margin-bottom: 30px;
+margin-left: 5%;
+margin-right: 5%;
+}
+
+.line {
+flex-basis: 100%;
+border-bottom: 1px solid black;
+margin-top: 50px;
+margin-bottom: 30px;
+margin-left: 5%;
+margin-right: 5%;
+}
+
+/* Skills Section */
+
+
+.Skills_tech-stacks-container__wPIVK {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  padding: 10px; 
+  max-width: 1200px; 
+  margin: auto; 
+}
+
+.Skills_tech-stacks__f20f8 {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px; /* Add some margin between the tech stacks */
+  background-color:	#FFFFFF;
+}
+
+.Skills_title__TH2ju {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  font-weight: 600; /* Make the title a bit bolder */
+}
+
+.Skills_img__f94MA {
+  max-width: 70px; /* Set a maximum width for the images */
+  height: auto;
+  margin: 10px auto; /* Center the images and add some margin */
+}
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 25px;
+  z-index: 9999;
+}
+
+#scrollToTopBtn img {
+  cursor: pointer;
+}
+
+#scrollToTopBtn.show {
+  display: block;
+}
