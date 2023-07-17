@@ -48,6 +48,7 @@
   font-family: "Dovemayo_gothic", sans-serif;
   margin-left: 7%;
   margin-right: 7%;
+  overflow-x: auto; 
 }
 
 .Projects_project__hHhvb {
@@ -164,4 +165,12 @@ button.minty-btn {
 .Projects_next__3RYWe img {
   width: 30px;
   height: 30px;
+}
+
+.minty-btn {
+  font-weight: bold;
+  font-size: 1.2em; /* 원하는 크기로 조정해주세요 */
+  cursor: pointer;
+  background-color: paleturquoise;
+  width: 10vw;
 }

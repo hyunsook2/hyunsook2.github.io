@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'ImcreSoojin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.Projects_Projects__E9SvD {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#text1{
+    font-family: 'Dovemayo_gothic', sans-serif;
+}
+
+.card-title{
+    font-family: 'Dovemayo_gothic', sans-serif;
+}
+
+body {
+    background-color: #bbf2f9 !important; 
+}
+
+#projects {
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.container.my-4 {
+    margin-bottom: 30px;
+}
+
+.line {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Dovemayo_gothic', sans-serif;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-body {
+    flex-grow: 1;
+}
+
+.card-img-top {
+    object-fit: contain;
+    width: 300px;
+    height: 100%;
+}
+.textlist{
+    font-family: 'ImcreSoojin';
+    text-align: center;
+}

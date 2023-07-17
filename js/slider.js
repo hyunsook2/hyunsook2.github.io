@@ -2,6 +2,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
   const carousels = document.querySelectorAll(".Projects_img-carousel__e8hwy");
 
   carousels.forEach((carousel) => {
+    const slidesContainer = carousel.querySelector(".Projects_imgs__datEq");
     const slides = carousel.querySelectorAll(".Projects_img-wrapper__0b8Tt");
     const pageNumber = carousel.querySelector(".Projects_page__zHIqO");
     const prevButton = carousel.querySelector(".Projects_prev__wS3_z");
@@ -36,3 +37,4 @@ window.addEventListener("DOMContentLoaded", (event) => {
     updatePageAndSlide();
   });
 });
+
