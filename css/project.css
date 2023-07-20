@@ -174,3 +174,10 @@ button.minty-btn {
   background-color: paleturquoise;
   width: 10vw;
 }
+.ERP-btn {
+  font-weight: bold;
+  font-size: 1.2em; /* 원하는 크기로 조정해주세요 */
+  cursor: pointer;
+  background-color: rgb(189, 158, 218);
+  width: 10vw;
+}
